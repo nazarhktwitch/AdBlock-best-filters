@@ -1,0 +1,90 @@
+! 🚀 Block YouTube anti-adblock popups & messages
+youtube.com##+js(set, yt.config_.openPopupConfig.supportedPopups.adBlockMessageViewModel, false)
+youtube.com##+js(set, yt.config_.openPopupConfig, {})
+
+! 🚀 Block all pre-roll, mid-roll, and overlay ads
+youtube.com##+js(set, ytplayer.config.args.adPlacements, [])
+youtube.com##+js(set, ytplayer.config.args.playerResponse.adPlacements, [])
+
+! 🚀 Remove forced video ads
+youtube.com##+js(nano-stb, ytplayer.config.args.raw_player_response.adPlacements)
+youtube.com##+js(nano-stb, ytplayer.config.args.adPlacements)
+youtube.com##+js(nano-stb, ytplayer.config.args.playerResponse.adPlacements)
+
+! 🚀 Block YouTube ad-related scripts
+youtube.com##+js(nano-sib, script:has-text(/ad_/))
+youtube.com##+js(nano-sib, script:has-text(/ads_/))
+
+! 🚀 Block new YouTube ad injection methods
+youtube.com##+js(nano-stb, ytplayer.config.args.ad3_module)
+youtube.com##+js(nano-stb, ytplayer.config.args.ad_slots)
+youtube.com##+js(nano-stb, ytplayer.config.args.ad_badge)
+
+! 🚀 Remove YouTube homepage ads
+youtube.com##ytd-rich-section-renderer:has([is-ads])
+youtube.com##ytd-carousel-ad-renderer
+youtube.com##ytd-display-ad-renderer
+
+! 🚀 Block major ad networks
+||googlesyndication.com^$script,third-party
+||doubleclick.net^$third-party
+||adservice.google.com^$third-party
+||ads.yahoo.com^$third-party
+||ads.twitter.com^$third-party
+||adserver.*^$third-party
+||adtrack.*^$third-party
+||adtech.*^$third-party
+||adclick.*^$third-party
+||bannerads.*^$third-party
+||popupads.*^$third-party
+
+! 🚀 Block spyware, analytics, and tracking
+||google-analytics.com^$third-party
+||facebook.com/tr^$third-party
+||pixel.facebook.com^$third-party
+||tiktok.com/pixel^$third-party
+||bing.com/track^$third-party
+||amazon-adsystem.com^$third-party
+||adobeanalytics.com^$third-party
+||twitter.com/i/ads^$third-party
+||snapchat.com/pixel^$third-party
+||spotify.com/ads^$third-party
+||reddit.com/ads^$third-party
+
+! 🚀 Block in-game and mobile app ads
+||unityads.unity3d.com^
+||pubads.g.doubleclick.net^
+||pagead2.googlesyndication.com^
+||securepubads.g.doubleclick.net^
+||imasdk.googleapis.com^
+
+! 🚀 Block fake download buttons & scam ads
+##.download-button
+##.fake-download
+##.ad-container
+##.sponsored
+
+! 🚀 Block popups & forced redirects
+*$popup
+||*^$third-party,document
+
+! 🚀 Block cookie banners & GDPR popups
+##.cookie-banner
+##.gdpr-banner
+##.consent-popup
+##.eu-cookie-popup
+##.cookie-consent
+##.privacy-banner
+
+! 🚀 Block floating video ads & sticky elements
+##.floating-video
+##.video-overlay
+##.sticky-ads
+##.sticky-footer
+
+! 🚀 Block tracking scripts that use cookies or other storage
+||trackertag.com^$third-party
+||adclicktracking.com^$third-party
+
+! 🚀 Block known ad-injection scripts
+*$script,third-party,domain=adobedtm.com|adnxs.com|adroll.com|adsrvr.org|advertising.com|doubleverify.com|liveintent.com|mediamath.com|rubiconproject.com|taboola.com|outbrain.com
