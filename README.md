@@ -113,8 +113,10 @@ youtube.com##ytd-display-ad-renderer
 
 ```plaintext
 ! 🚀 Block popups & forced redirects
-*$popup
-||*^$third-party,document
+*$popup,third-party,document,domain=drive.google.com
+||drive.google.com^$third-party,document
+||youtube.com^$third-party,document
+||google.com^$third-party,document
 
 ! 🚀 Block cookie banners & GDPR popups
 ##.cookie-banner
