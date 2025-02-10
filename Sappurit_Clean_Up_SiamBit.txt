@@ -1,0 +1,101 @@
+! Title: Sappurit - Clean Up SiamBit
+! Homepage: https://github.com/Sappurit/uBlock-Filters
+! Download: https://github.com/Sappurit/uBlock-Filters/raw/master/Sappurit_Clean_Up_SiamBit.txt
+! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
+! Expires: 2 days
+! Version: 25
+
+!-------------------------------------------------------
+!--- SiamBit -------------------------------------------
+!-------------------------------------------------------
+
+! Header
+bearbit.co##body > table:nth-of-type(1) > tbody > tr > .bottom
+
+! Tips
+bearbit.co##.outer > p:has-text(Tip:)
+
+! ข่าวสาร Si@mBIT
+bearbit.co##table[bgcolor="white"]:has-text(ข่าวสาร Si@mBIT)
+
+! สยามบิต ดอทคอม สนับสนุนให้ คนไทย อัพโหลดดาวน์โหลดไฟล์ แลกเปลี่ยนเพื่อความบันเทิง ไม่สนับสนุนการ ซื้อ-ขาย
+bearbit.co##table[width="550"]:has(b:has-text(แลกเปลี่ยนเพื่อความบันเทิง ไม่สนับสนุนการ ซื้อ-ขาย))
+
+! Ads Casino Online
+bearbit.co##a[href*="lnw.lol"]
+bearbit.co##a[href*="kingkongxo.com"]
+bearbit.co##a[href*="55xo.co"]
+bearbit.co##a[href*="ptgame24.com"]
+bearbit.co##a[href*="1slot.co"]
+bearbit.co##a[href*="55amb.com"]
+
+! Clean up user name icons and slogan
+bearbit.co##img[src*="pic/usericon/"][title]
+bearbit.co##td[width="260"][align="left"] > font[class="small"][color="gray"]
+
+! details.php Rows
+bearbit.co##tr:has(> td[id="seethankslist"])
+bearbit.co##tr:has(> td[id="saythanks"])
+! bearbit.co##tr:has(> td[class="heading"][valign="top"][align="right"]:has-text(Owner))
+
+! details.php Ads
+bearbit.co##td[width="88%"][align="left"] > a:has(img[alt="banner"])
+bearbit.co##td[width="88%"][align="left"] > a:has(img[title="คาสิโนออนไลน์"])
+bearbit.co##td[width="88%"][align="left"] > a:has(img[title="เว็บสล็อตอันดับ1ระบบฝาก-ถอนเร็วที่สุด"])
+bearbit.co##td[width="88%"][align="left"] > a[title="Bookmark File"]
+bearbit.co##td[width="88%"][align="left"] > a[title="Promote this Torrent"]
+bearbit.co##td[width="88%"][align="left"] > a:has-text(เดิมพันฟุตบอล)
+
+! details.php NongZeza
+bearbit.co##td[valign="top"][align="left"] font[size="7"]:has-text(#Siambit Exclusive)
+bearbit.co##td[valign="top"][align="left"] table[class="main"][border="1"][cellspacing="0"][cellpadding="10"][bgcolor="white"]:has-text(แจ้งหมายเหตุสำคัญ)
+bearbit.co##td[valign="top"][align="left"] font[color="eb8bb1"]:has-text(เส้นทางด่วน! ขึ้นสู่ด้านบน)
+bearbit.co##td[class="text"] font[size="3"]:has-text(ค้นหางานทั้งหมดที่ NongZEZA~ นำมาส่งมอบแบ่งปันให้)
+
+! NongZeza Pics
+||i.imgur.com/XFM3ryy.png$image
+||i.imgur.com/rM8Wkrd.gif$image
+||i.imgur.com/HylHYQr.gif$image
+||i.imgur.com/QzCOZdC.gif$image
+||i.imgur.com/LYkUWro.png$image
+||i.imgur.com/TQ3NL5N.gif$image
+||i.imgur.com/J76Pg7c.png$image
+||i.imgur.com/hnpNG8r.gif$image
+||i.imgur.com/ogZGQY7.png$image
+||i.imgur.com/vbU6tNi.gif$image
+||images4.imagebam.com/ed/71/52/MEQPU2Z_o.gif
+||images4.imagebam.com/ce/6d/a4/MEQPU3G_o.gif
+||images4.imagebam.com/07/0e/b1/MEQPU4J_o.gif
+||images4.imagebam.com/e6/60/5e/MEQPXTN_o.gif
+||images4.imagebam.com/0d/2d/18/MER3Y3H_o.png
+
+! Useless Icons
+||bearbit.co/pic/on.gif$image
+||bearbit.co/pic/off.gif$image
+||bearbit.co/pic/male.gif$image
+||bearbit.co/pic/female.gif$image
+||bearbit.co/pic/imdb_siambit.png$image
+||bearbit.co/pic/fb_id.png$image
+||bearbit.co/pic/new1.gif$image
+||bearbit.co/pic/crown.gif$image
+||bearbit.co/pic/crown3.gif$image
+||bearbit.co/pic/Crown20000new.gif$image
+||bearbit.co/pic/stickyt.gif$image
+||bearbit.co/pic/pn_inbox.gif$image
+||bearbit.co/pic/star.gif$image
+||bearbit.co/pic/hot1.gif$image
+||bearbit.co/pic/s-hot.gif$image
+||bearbit.co/pic/downloadpic.gif$image
+||bearbit.co/pic/onload.gif$image
+||bearbit.co/pic/Pause.png$image
+||bearbit.co/pic/default_avatar.gif$image
+||bearbit.co/pic/smilies/clap2.gif$image
+||bearbit.co/pic/smilies/emo-57.gif$image
+||bearbit.co/pic/smilies/zeza-SirensJY2U.gif$image
+||bearbit.co/pic/thank/th_thank.png$image
+||bearbit.co/include/logo_siambit.gif$image
+
+!-------------------------------------------------------
+!--- End -----------------------------------------------
+!-------------------------------------------------------
+

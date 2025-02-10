@@ -1,0 +1,88 @@
+! Title: Sappurit - Personal Filters
+! Homepage: https://github.com/Sappurit/uBlock-Filters
+! Download: https://github.com/Sappurit/uBlock-Filters/raw/master/Sappurit_Personal_Filters.txt
+! License: https://github.com/uBlockOrigin/uAssets/blob/master/LICENSE
+! Expires: 2 days
+! Version: 61
+
+!-------------------------------------------------------
+!--- Youtube -------------------------------------------
+!-------------------------------------------------------
+
+! Suggested overlay at end of the clip.
+! youtube.com##.ytp-ce-element
+
+!-------------------------------------------------------
+!--- Facebook ------------------------------------------
+!-------------------------------------------------------
+
+! Left Column - Footer
+  facebook.com##div:has(> footer[aria-label="Facebook"][role="contentinfo"])
+
+! Center Column - Feed Box
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/People You May Know/)
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/Reels and short videos/)
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/Friend Requests/)
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/Suggested for you/)
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/This is how your ad will look/)
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/Try an ad designed for your business/)
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/(ธนาธร|ปิยบุตร|จตุพร|ณัฐวุฒิ|จ่านิว|รังสิมันต์|เยาวชนปลดแอก|มายด์|จุรินทร์)/)
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/(พปชร|รทสช|พรรคก้าวไกล|รวมไทยสร้างชาติ|พลังประชารัฐ|เพื่อไทย|ประชาธิปัตย์|ปชป)/)
+! facebook.com##h3:has-text(News Feed posts) ~ div > div:has-text(/(เสี่ยโป้|เสกโลโซ|เสก โลโซ|กานต์|BitKub)/)
+
+! Right Column - Birthdays
+  facebook.com##div[role="complementary"] span:nth-of-type(1) ~ div:nth-of-type(2):has-text(Birthdays)
+
+! Right Column - Page About
+! facebook.com##div[style="height: 0px;"] + div > div:nth-of-type(1):has(h2 > span:has-text(About))
+
+!-------------------------------------------------------
+!--- Twitter -------------------------------------------
+!-------------------------------------------------------
+
+! Center - Pinned Tweet (11-JUN-2024)
+x.com,twitter.com##div[data-testid="cellInnerDiv"]:has(article[data-testid="tweet"] div:has-text(Pinned))
+
+! Center - Ad Tweet (11-JUN-2024)
+x.com,twitter.com##div[data-testid="cellInnerDiv"]:has(article[data-testid="tweet"] span:has-text(/^Ad$/))
+
+! Center - Who to follow (11-JUN-2024)
+x.com,twitter.com##div[data-testid="cellInnerDiv"]:has(h2[role="heading"] span:has-text(Who to follow))
+x.com,twitter.com##div[data-testid="cellInnerDiv"]:has(button[data-testid="UserCell"] span:has-text(Follow))
+x.com,twitter.com##div[data-testid="cellInnerDiv"]:has(a[href*="connect_people"] span:has-text(Show more))
+
+! Right - Subscribe to Premium (11-JUN-2024)
+x.com,twitter.com##div[data-testid="sidebarColumn"] div:has(> div > aside[role="complementary"][aria-label="Subscribe to Premium"])
+
+! Right - Who to follow or You might like (11-JUN-2024)
+x.com,twitter.com##div[data-testid="sidebarColumn"] div:has(> div > aside[role="complementary"][aria-label="Who to follow"])
+
+! Right - Footer (11-JUN-2024)
+x.com,twitter.com##div[data-testid="sidebarColumn"] div:has(> nav[role="navigation"][aria-label="Footer"])
+
+!-------------------------------------------------------
+!--- Misc ----------------------------------------------
+!-------------------------------------------------------
+
+! RenderZ
+||cleverwebserver.com
+renderz.app##div[class*="venatus-ad-wrapper"]
+
+
+!-------------------------------------------------------
+!--- Block Domains -------------------------------------
+!-------------------------------------------------------
+
+||google-analytics.com
+||googlesyndication.com
+||doubleclick.net
+||truehits.net
+||truehits.in.th
+||tripadvisor.com
+||taboola.com
+||imprezzer.com
+
+!-------------------------------------------------------
+!--- End -----------------------------------------------
+!-------------------------------------------------------
+
