@@ -64,9 +64,11 @@ youtube.com##ytd-display-ad-renderer
 ##.ad-container
 ##.sponsored
 
-! 🚀 Block popups & forced redirects
-*$popup
-||*^$third-party,document
+! 🚀 Block popups & forced redirects with exclusions for essential downloads
+*$popup,third-party,domain=drive.google.com
+||drive.google.com^$third-party,document
+||youtube.com^$third-party,document
+||google.com^$third-party,document
 
 ! 🚀 Block cookie banners & GDPR popups
 ##.cookie-banner
