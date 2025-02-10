@@ -201,9 +201,9 @@ pikabu.ru##^script:has-text(doubleclick.net)
 pikabu.ru##^script:has-text(mc.yandex.ru)
 rvb.ru##^script:has-text(abcdefghijklmnopqrstuvwxyz)
 tapochek.net##^script:has-text(MTcityAds)
-txapela.ru##script:inject(abort-current-inline-script.js, AIO)
-txapela.ru##script:inject(abort-current-inline-script.js, String, _0x)
-zismo.biz##^script:has-text(http://zismone.ru/2549.js?v=123")
+txapela.ru##+js(abort-current-inline-script, AIO)
+txapela.ru##+js(abort-current-inline-script, String, _0x)
+||zismone.ru/2549.js^
 ||eurweb.com^$csp=script-src 'self' * 'unsafe-inline'
 ||freewarefiles.com^$csp=script-src 'self' * 'unsafe-inline'
 ||russkiiyazyk.ru^$csp=script-src 'self' * 'unsafe-inline'
@@ -1502,7 +1502,11 @@ wolframalpha.com###sidebar
 wolframalpha.com###spons-bound
 wolframalpha.com###sponsor-ad
 wsturbo.net##.fullstory.base > noindex > center
-www.yandex.ru##.ti__Gn > div:has(div > div:matches-css(background-image: /^url\("https://yastatic.net/www/_//))
+! Old contains syntax error, I changed it to 2 other solutions
+! www.yandex.ru##.ti__Gn > div:has(div > div:matches-css(background-image: /^url\("https://yastatic.net/www/_//)))
+||yastatic.net/www/_//*$image
+www.yandex.ru##.ti__Gn > div:has(div[style*="background-image"])
+! end
 x-torrent.pro##.amigo
 x17online.com##div[id$="externalcontainer"][style]
 xatab-repack.net##.block:has(.b_in > div > a[rel] > img)
