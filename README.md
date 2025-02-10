@@ -21,6 +21,13 @@ It blocks all types of ads, **trackers**, **popups**, **cookie banners**, and **
 
 *compatible only with uBlock Origin
 
+#### Recomendations related to security
+
+I recommend to install userscripts and styles for better privacy and improvisations:
+
+[Userscripts](https://github.com/hant0508/usescripts)
+[Userstyles](https://github.com/hant0508/userstyles)
+
 ---
 
 ## **⚡ How to Install the Filters**
