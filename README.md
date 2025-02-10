@@ -14,6 +14,13 @@ It blocks all types of ads, **trackers**, **popups**, **cookie banners**, and **
 - **Cookie Banner & GDPR Blocker** (Removes cookie banners and privacy notifications)
 - **Floating Video Blocker** (Stops sticky video ads and popups)
 
+#### Notes:
+Adguard Russian Filter*
+Adguard English Filter*
+Adguard Spyware Filter*
+
+*compatible only with uBlock Origin
+
 ---
 
 ## **⚡ How to Install the Filters**
