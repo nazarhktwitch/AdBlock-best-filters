@@ -1,0 +1,39 @@
+#@#.scroll-up-button
+1tv.ru#@#.promo-place
+4pda.ru#@#*:if(:scope > a[rel="nofollow"][href][target="_blank"] ~ * > img[src])
+@@||*.*$popup,domain=google.com
+@@||allsocial.ru/stat/css/*$stylesheet,first-party
+@@||allsocial.ru/stat/img/app/*$image,first-party
+@@||allsocial.ru/stat/js/*$script,first-party
+@@||api.geetest.com^$script,domain=binance.com
+@@||assets.adobedtm.com^$script,domain=ru.fifa.com
+@@||cs.pikabu.ru/files/ad/*.png
+@@||google.*/adwords/*$domain=www.google.ru
+@@||mc.yandex.ru/metrika/watch.js$script,domain=nofelet.ru
+@@||mymeizu.ru/bitrix/templates/m2mini/content$image
+@@||profi.ru/backoffice/icjs/b2b/img/*$image,domain=math.semestr.ru
+@@||relap.io/api$script,domain=adme.ru
+@@||speedtest.net/javascript/speedtest-main.js?*
+@@||static.geetest.com/static/js/*$script,domain=binance.com
+@@||telegram.vs.fsb.today/wp-content/themes/twentyseventeen/images/240x400.jpg
+@@||telegram.vs.fsb.today/wp-content/themes/twentyseventeen/images/300x250.jpg
+@@||u.alicdn.com/??js/6v/lib/arale/widget/widget.js,js/6v/lib/arale/templatable/templatable.js,js/6v/biz/common/click-stat/click-stat.js,mobile/ae/common/hawe/1.0.4/hawe.js$script,domain=sale.aliexpress.com
+@@||u.alicdn.com/js/5v/run/pool/monitor/beacon_async.js$script,domain=sale.aliexpress.com
+@@||videouroki.net/img/*/*.gif
+danieldefo.ru#@#.bannerBlock
+eurweb.com#@#div > iframe:first-child
+google.com#@#a[href]
+hardware.info#@#.cookiecontainer:not(body):not(html)
+imagesbase.ru#@#.adsbygoogle
+joyreactor.cc#@#div#sidebar
+marketgid.com#@#a[href*="marketgid.com/"]
+new.gramota.ru#@##main-sec > .block-side:last-child
+new.pikabu.ru#@#.footer__cookie:not(body):not(html)
+new.pikabu.ru#@#.story:if-not(.story__author)
+new.pikabu.ru#@#.story[data-vote="1"]
+nextcloud.com#@#.bannerhead
+pikabu.ru#@#.footer__cookie
+pikabu.ru#@#.page-story > .story:if(.story__header-additional-wrapper > .story__tags:has-text(реклама))
+pikabu.ru#@#header > .header__main:style(background-color: #8ac858 !important)
+toolslib.net#@#.col-md-6
+www.eurweb.com#@#[style] > iframe

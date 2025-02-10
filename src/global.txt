@@ -1,0 +1,14 @@
+###WIX_ADS
+###bannerSmall
+###bg-banner
+##.Banner_Top
+##.abc_banner
+##.adv_wrap
+##.banner2
+##.bunner
+##.megaads
+##.place_for_ad
+##.topi_banner
+##[id="WIX_ADS"]
+/bannery/$image
+/exoads/b/
